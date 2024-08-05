@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import Image from "next/Image";
+import Image from "next/image";
 import {
   RxCrop,
   RxDesktop,
