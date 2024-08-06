@@ -129,7 +129,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
   return (
     <div>
-      <div className="h-[80vh] text-center xl:text-left py-32 relative">
+      <div className="h-[100vw] text-center xl:text-left text-sm xs:text-lg relative">
         <Circles></Circles>
         <motion.div
           variants={fadeIn("right", 0.2)}
@@ -140,7 +140,7 @@ const About = () => {
         >
           <Avatar />
         </motion.div>
-        <div className="container align-top mx-auto h-full flex flex-col items-center xl:flex-row gap-x-9">
+        <div className="container align-top mx-auto  flex flex-col items-center xl:flex-row gap-x-9">
           <div className="flex-1 flex flex-col justify-center">
             <div>
               <motion.h2

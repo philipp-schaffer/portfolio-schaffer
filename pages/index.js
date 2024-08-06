@@ -8,17 +8,17 @@ import { fadeIn } from "../variants";
 import Particles from "react-tsparticles";
 const Home = () => {
   return (
-    <div className="bg-primary/60 h-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10 min-h-screen">
+    <div className="bg-primary/60 h-[100wv] bg-gradient-to-r from-primary/10 via-black/30 to-black/10 min-h-screen">
       {/* text */}
       <div className="w-full h-full ">
-        <div className="text-center h-[96vh] xs:h-[110vh] flex flex-col justify-center xl:pt-40 xl:text-left container mx-auto">
+        <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left container mx-auto">
           {/* title */}
           <motion.h1
             variants={fadeIn("down", 0.1)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1 z-30 mt-5 text-xl xs:text-4xl xs:mt-0"
+            className="h1 z-30 mt-5  xs:mt-0"
           >
             Transforming Ideas Into
             <span className="text-accent">
@@ -27,6 +27,7 @@ const Home = () => {
             </span>
           </motion.h1>
           {/* subtitle */}
+
           <motion.p
             variants={fadeIn("down", 0.2)}
             initial="hidden"
@@ -38,9 +39,15 @@ const Home = () => {
             nostrum quam reprehenderit vero, tenetur voluptatem nulla aut
             aspernatur dolores ut.
           </motion.p>
-          <div className="flex justify-center xl:hidden relative">
+          <motion.div
+            variants={fadeIn("down", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="flex justify-center xl:hidden relative"
+          >
             <ProjectsBtn />
-          </div>
+          </motion.div>
           <motion.div
             variants={fadeIn("down", 0.5)}
             initial="hidden"

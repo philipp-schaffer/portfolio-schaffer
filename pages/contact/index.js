@@ -31,8 +31,8 @@ const Contact = () => {
   };
 
   return (
-    <div className="h-[100vh]">
-      <div className="container  mx-auto text-center xl:text-left flex items-center justify-center h-full">
+    <div className="h-[100vw]">
+      <div className="container mx-auto text-center xl:text-left flex items-center justify-center w-full overflow-x-scroll">
         <div className="flex flex-col w-full  max-w-[700px] ">
           <motion.h2
             variants={fadeIn("down", 0.3)}
