@@ -140,7 +140,7 @@ const About = () => {
         >
           <Avatar />
         </motion.div>
-        <div className="container align-top mx-auto  flex flex-col items-center xl:flex-row gap-x-9">
+        <div className="container w-full h-[92vh] align-top mx-auto  flex flex-col items-center xl:flex-row gap-x-9">
           <div className="flex-1 flex flex-col justify-center">
             <div>
               <motion.h2
