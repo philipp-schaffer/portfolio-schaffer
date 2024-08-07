@@ -26,16 +26,20 @@ const workSlides = {
         {
           title: "TRUENDO - Shopify App",
           description:
-            "A part of my journey began with a part-time job at an Austrian IT company during school, where I learned to code app extensions for CMS systems like WordPress, Shopify, and Wix.",
-          path: "/truendo.png",
+            "Developed App - Extensions for the companies SaaS product compatible with Shopify, Wordpress, Wix, Drupal and Magento in MERN stack or PHP to make the integration process more efficient",
+          path: "/shopify.png",
         },
         {
-          title: "title",
-          path: "/thumb3.jpg",
+          title: "Climatics",
+          description:
+            "Climatics is a student project where we crawled opinions about climate change from the web to have an AI which is being trained to tell if the opinion is good, neutral or bad. Upon that we visualized those 3 statistics and how the developed through out the time",
+          path: "/climatics.png",
         },
         {
-          title: "title",
-          path: "/thumb4.jpg",
+          title: "Kinetic Pitch",
+          description:
+            "Attending the Youth Innovation Competition Austria 2023 - where I wrote a business plan 'Kinetic Pitch' a software-concept which revolutionizes pitching and speaking. With AI its possible to detect common motion to use in certained presentations",
+          path: "/kinetic.png",
         },
       ],
     },
@@ -43,19 +47,28 @@ const workSlides = {
       images: [
         {
           title: "TRUENDO/DB - Cookie Database",
-          path: "/truendo-db.png",
+          description:
+            "As the lead of a team of 4 developers, we managed to build a fullstack web app for TRUENDO Technologies to show crawled cookie data in a friendly UI",
+          path: "/cookie.png",
         },
         {
-          title: "title",
-          path: "/thumb1.jpg",
+          title: "We Amplify!",
+          description:
+            "With Adobe Illustrator, I created isometric vector designs used for landing pages, posters and flyers. Additionally I overtook customer requests for logo designs",
+          path: "/amplify.png",
         },
         {
-          title: "title",
-          path: "/thumb2.jpg",
+          title: "Sim Company Austria",
+          description:
+            "Attending the Youth Innovation Competition Austria 2023 - where we wrote a business plan 'Sim Company Austria' a software-concept which gamificates the school subject 'accounting'",
+
+          path: "/simcompany.png",
         },
         {
-          title: "title",
-          path: "/thumb3.jpg",
+          title: "vomhalterbach.at",
+          description:
+            "Deployed static website which serves the purpose of collecting new customer messages as well as serving a digital representation for local dog breeders",
+          path: "/vomhalter.png",
         },
       ],
     },

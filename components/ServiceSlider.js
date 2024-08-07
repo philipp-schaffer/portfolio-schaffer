@@ -18,32 +18,23 @@ const serviceData = [
   {
     id: 1,
     icon: <RxCrop />,
-    title: "Crop",
-    description: "Adjust the crop settings of your image.",
+    title: "Visual Designs",
+    description:
+      "Creation of vector graphics and video editing to 3D modeling and UX/UI design, I use Adobe products, Blender (Maya) as well as Figma to create digital solutions.",
   },
   {
     id: 2,
-    icon: <RxDesktop />,
-    title: "Desktop",
-    description: "Optimized for desktop view.",
+    icon: <RxCode />,
+    title: "Coding",
+    description:
+      "With years of experience in Java, C# and JavaScript frameworks and developing full-stack applications, I have a solid understanding of both front-end and back-end development.",
   },
   {
     id: 3,
     icon: <RxPencil2 />,
-    title: "Pencil",
-    description: "Draw and edit your design.",
-  },
-  {
-    id: 4,
-    icon: <RxReader />,
-    title: "Reader",
-    description: "View your document in a reader mode.",
-  },
-  {
-    id: 5,
-    icon: <RxCode />,
-    title: "Coding",
-    description: "Launch your project to the next level.",
+    title: "Art",
+    description:
+      "With doing traditional drawing and digital illustrations consistantly, I am able to combine different artistic techniques and styles to create unique and eye-catching artwork.",
   },
 ];
 
@@ -58,7 +49,7 @@ const ServiceSlider = () => {
         freeMode={true}
         pagination={{ clickable: true }}
         modules={[FreeMode, Pagination]}
-        className="h-[240px] sm:h-[340px]"
+        className="h-[100%] sm:h-[340px]"
       >
         {serviceData.map((item, index) => {
           return (

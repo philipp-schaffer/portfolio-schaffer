@@ -18,7 +18,7 @@ const Work = () => {
                   initial="hidden"
                   animate="show"
                   exit="hidden"
-                  className="h2 xl:mt-8"
+                  className="h2 xl:mt-8 w-[100%]"
                 >
                   Work & Projects <span className="text-accent"> .</span>
                 </motion.h2>
@@ -29,8 +29,10 @@ const Work = () => {
                   exit="hidden"
                   className="mb-4 max-w-[400px] mx-auto lg:mx-0"
                 >
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. A
-                  eveniet dignissimos distinctio tempore harum laudantium.
+                  During my time as a student at the HTL Spengergasse I crafted
+                  over 50 projects and additionally worked part-time for 2+
+                  years as Junior Dev/Graphic Designer at Austria IT Consulting
+                  Company
                 </motion.p>
               </div>
               <motion.div

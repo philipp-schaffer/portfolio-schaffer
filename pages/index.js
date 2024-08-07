@@ -20,7 +20,7 @@ const Home = () => {
             exit="hidden"
             className="h1 z-30 mt-5  xs:mt-0"
           >
-            Transforming Ideas Into
+            Turning Visions Into
             <span className="text-accent">
               <br />
               Digital Reality
@@ -35,9 +35,9 @@ const Home = () => {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 z-30"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-            nostrum quam reprehenderit vero, tenetur voluptatem nulla aut
-            aspernatur dolores ut.
+            My name is Philipp, I am a 20 year old ambitioned software developer
+            and designer. My goal is to create tools which help others through
+            out the day :)
           </motion.p>
           <motion.div
             variants={fadeIn("down", 0.4)}

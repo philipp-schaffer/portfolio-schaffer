@@ -13,6 +13,7 @@ import {
   FaVuejs,
   FaJava,
   FaPython,
+  FaWix,
 } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -24,9 +25,11 @@ import {
   SiDotnet,
   SiSpringboot,
   SiBlazor,
+  SiDocker,
   SiAdobeillustrator,
   SiAdobepremierepro,
   SiMysql,
+  SiKubernetes,
 } from "react-icons/si";
 import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
 
@@ -47,31 +50,37 @@ const aboutData = [
           <FaReact />,
           <FaVuejs />,
           <SiBlazor />,
-
-          <FaWordpress />,
+          <SiFramer />,
           <FaShopify />,
+          <FaWordpress />,
+          <FaWix />,
         ],
       },
       {
         title: "Backend Technologies",
         icons: [
           <FaJava />,
-          <SiNextdotjs />,
           <SiDotnet />,
+          <FaPython />,
+
+          <SiNextdotjs />,
+
           <SiMongodb />,
           <SiMysql></SiMysql>,
           <SiPostgresql />,
-          <FaPython />,
+          <SiDocker />,
         ],
       },
       {
         title: "Content Creation",
         icons: [
-          <FaFigma />,
-          <SiAdobexd />,
-          <SiAdobephotoshop />,
           <SiAdobeillustrator></SiAdobeillustrator>,
+
+          <SiAdobephotoshop />,
           <SiAdobepremierepro></SiAdobepremierepro>,
+          <SiAdobexd />,
+
+          <FaFigma />,
         ],
       },
     ],
@@ -80,12 +89,12 @@ const aboutData = [
     title: "awards",
     info: [
       {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
+        title: "Youth Innovation Competition Winner - DigiBonus Prize",
+        stage: "2023",
       },
       {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
+        title: "Youth Innovation Competition - 3rd round of 5",
+        stage: "2023",
       },
     ],
   },
@@ -93,33 +102,21 @@ const aboutData = [
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        title: "Software Developer for Coredat Business GmbH - ",
+        stage: "10/2023 - 05/2024",
       },
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
+        title:
+          "Junior Software Developer/Graphic Designer at TRUENDO Technologies GmbH - part time ",
+        stage: "09/2021 - 09/2023",
       },
       {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
-      },
-    ],
-  },
-  {
-    title: "credentials",
-    info: [
-      {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
+        title: "Summer Intern at Decidio GmbH",
+        stage: "07/2021 - 08/2021",
       },
       {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
-      },
-      {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        title: "Summer Intern at WienerLokalbahnen GmbH",
+        stage: "08/2020 - 09/2020",
       },
     ],
   },
@@ -129,7 +126,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
   return (
     <div>
-      <div className="h-[100vw] text-center xl:text-left text-sm xs:text-lg relative">
+      <div className="xs:h-[100vh] h-[60vh] text-center xl:text-left text-sm xs:text-lg relative">
         <Circles></Circles>
         <motion.div
           variants={fadeIn("right", 0.2)}
@@ -140,7 +137,7 @@ const About = () => {
         >
           <Avatar />
         </motion.div>
-        <div className="container w-full h-[92vh] align-top mx-auto  flex flex-col items-center xl:flex-row gap-x-9">
+        <div className="container w-full h-[70vh]  align-top mx-auto  flex flex-col items-center xl:flex-row gap-x-9">
           <div className="flex-1 flex flex-col justify-center">
             <div>
               <motion.h2
@@ -150,8 +147,9 @@ const About = () => {
                 exit="hidden"
                 className="h2"
               >
-                Captivating <span className="text-accent">stories</span> birth
-                magnificent desgins.
+                <span className="font-thin">Hey!</span> <br></br>
+                My name is <span className="text-accent">Philipp</span>{" "}
+                <br></br>
               </motion.h2>
               <motion.p
                 variants={fadeIn("right", 0.3)}
@@ -160,10 +158,9 @@ const About = () => {
                 exit="hidden"
                 className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
               >
-                10 years ago, I began freelancing as a developer. Since then,
-                I´ve done remote work for agan encies, consulted for startups,
-                and colla borated on digital products for business and customer
-                use.
+                A 20 year old aspiring developer from Austria. I am passionate
+                about innovate digital solutions & creating tools to help
+                others.
               </motion.p>
               <motion.div
                 variants={fadeIn("right", 0.4)}
@@ -175,33 +172,34 @@ const About = () => {
                 <div className="flex flex-1 xl:gap-x-6">
                   <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                     <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                      <CountUp start={0} end={3} duration={5} />
+                      <CountUp start={0} end={2} duration={5} />
+                      <span> +</span>
                     </div>
                     <div className="flex justify-center xl:justify-start ">
                       <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] mb-2 ">
-                        Years of experience
+                        Years of experience{" "}
+                        <span className="text-[8px]">(part-time)</span>
                       </div>
                     </div>
                   </div>
                   <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                     <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                      <CountUp start={0} end={100} duration={5} />
-                      <span> +</span>
+                      <CountUp start={0} end={5} duration={5} />
                     </div>
                     <div className="flex justify-center xl:justify-start ">
                       <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] mb-2 ">
-                        Satisfied clients
+                        years of education
                       </div>
                     </div>
                   </div>
                   <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                     <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                      <CountUp start={0} end={50} duration={5} />
+                      <CountUp start={0} end={5} duration={5} />
                       <span> +</span>
                     </div>
                     <div className="flex justify-center xl:justify-start ">
                       <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] mb-2 ">
-                        Finished projects
+                        Professional Projects
                       </div>
                     </div>
                   </div>
