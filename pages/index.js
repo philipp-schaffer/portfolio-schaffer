@@ -8,17 +8,17 @@ import { fadeIn } from "../variants";
 import Particles from "react-tsparticles";
 const Home = () => {
   return (
-    <div className="bg-primary/60 h-[100wv] bg-gradient-to-r from-primary/10 via-black/30 to-black/10 min-h-screen">
+    <div className="bg-primary/60] h-[100vh] overflow-x-scroll bg-gradient-to-r from-primary/10 via-black/30 to-black/10 min-h-screen">
       {/* text */}
       <div className="w-full h-full ">
-        <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left container mx-auto">
+        <div className="text-center  overflow-x-scroll  flex flex-col justify-center xl:pt-40 xl:text-left container mx-auto">
           {/* title */}
           <motion.h1
             variants={fadeIn("down", 0.1)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1 z-30 mt-5  xs:mt-0"
+            className="h1 z-30 text-[1.5rem] lg:text-[3rem] xs:mt-0"
           >
             Turning Visions Into
             <span className="text-accent">
@@ -33,7 +33,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 z-30"
+            className="max-w-sm text-[1rem] lg:text-[1.2rem] xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 z-30"
           >
             My name is Philipp, I am a 20 year old ambitioned software developer
             and designer. My goal is to create tools which help others through
