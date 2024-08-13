@@ -8,7 +8,7 @@ import { fadeIn } from "../variants";
 import Particles from "react-tsparticles";
 const Home = () => {
   return (
-    <div className="bg-primary/60] h-[100vh] overflow-x-scroll bg-gradient-to-r from-primary/10 via-black/30 to-black/10 min-h-screen">
+    <div className="bg-primary/60] h-[100vw] xs:h-[100vh] overflow-x-scroll bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
       {/* text */}
       <div className="w-full h-full ">
         <div className="text-center  overflow-x-scroll  flex flex-col justify-center xl:pt-40 xl:text-left container mx-auto">

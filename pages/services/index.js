@@ -6,7 +6,7 @@ import { fadeIn } from "../../variants";
 
 const Services = () => {
   return (
-    <div className="h-[70vh] flex items-center">
+    <div className="h-[65vh] xs:h-[92vh] flex items-center">
       <Circles></Circles>
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
@@ -16,7 +16,7 @@ const Services = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2 xl:mt-8"
+              className="h2 "
             >
               My Services
               <span className="text-accent"> .</span>

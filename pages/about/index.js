@@ -126,7 +126,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
   return (
     <div>
-      <div className="xs:h-[100vh] h-[60vh] text-center xl:text-left text-sm xs:text-lg relative">
+      <div className="h-[100vw] xs:h-[100vh] text-center xl:text-left text-sm xs:text-lg relative">
         <Circles></Circles>
         <motion.div
           variants={fadeIn("right", 0.2)}
