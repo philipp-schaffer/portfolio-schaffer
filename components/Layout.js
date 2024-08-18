@@ -15,7 +15,9 @@ const Layout = ({ children }) => {
       <Nav></Nav>
       <Header></Header>
       <TopLeftImg></TopLeftImg>
-      <div className="overflow-y-scroll overflow-x-hidden">{children}</div>
+      <div className="h-[700px] xs:h-full">
+        <div className="overflow-y-scroll overflow-x-hidden">{children}</div>
+      </div>
     </div>
   );
 };
