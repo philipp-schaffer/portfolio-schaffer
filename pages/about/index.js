@@ -205,7 +205,7 @@ const About = () => {
                   </div>
                   <div className="relative flex-1 after:w-[1px] after:h-full  after:absolute after:top-0 after:right-0">
                     <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                      <CountUp start={0} end={50} duration={5} />
+                      <CountUp start={0} end={25} duration={5} />
                       <span> +</span>
                     </div>
                     <div className="flex justify-center xl:justify-start ">
