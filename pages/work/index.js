@@ -3,7 +3,8 @@ import Bulb from "../../components/Bulb";
 import Circles from "../../components/Circles";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
-
+import { Odor_Mean_Chey } from "next/font/google";
+import Image from "next/image";
 const Work = () => {
   return (
     <div className="">
@@ -44,6 +45,9 @@ const Work = () => {
               >
                 {" "}
                 <WorkSlider></WorkSlider>
+                <div className="flex items-center justify-center p-4">
+                  <Image src={"/swipeleft.png"} width={48} height={113}></Image>
+                </div>
               </motion.div>
             </div>
           </div>

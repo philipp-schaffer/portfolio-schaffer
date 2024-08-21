@@ -82,12 +82,12 @@ const WorkSlider = () => {
         spaceBetween={10}
         pagination={{ clickable: true }}
         modules={[Pagination]}
-        className="h-[100%] sm:h-[480px]"
+        className="sm:h-[480px]"
       >
         {workSlides.slides.map((item, index) => {
           return (
             <SwiperSlide key={index}>
-              <div className="grid md:grid-cols-2 grid-cols-1 grid-rows-1 md:grid-rows-2 gap-4 cursor-pointer">
+              <div className="grid h-full md:grid-cols-2 grid-cols-1 grid-rows-1 md:grid-rows-2 gap-4 cursor-pointer">
                 {item.images.map((image, index) => {
                   return (
                     <div
