@@ -125,20 +125,10 @@ const aboutData = [
 const About = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div>
-      <div className="h-[100vw] xs:h-[100vh] text-center xl:text-left text-sm xs:text-lg relative">
-        <Circles></Circles>
-        <motion.div
-          variants={fadeIn("right", 0.2)}
-          initial="hidden"
-          animate="show"
-          exit="hidden"
-          className="hidden xl:flex absolute bottom-0 -left-[370px]"
-        >
-          <Avatar />
-        </motion.div>
-        <div className="container w-full h-[70vh]  align-top mx-auto  flex flex-col items-center xl:flex-row gap-x-9">
-          <div className="flex-1 flex flex-col justify-center">
+    <div id="about" className="bg-site">
+      <div className="bg-primary/60 bg-gradient-to-r  from-primary/10 via-black/30 to-black/10 min-h-screen">
+        <div className="container w-full h-[100vh] text-center xl:text-left align-top mx-auto  flex flex-col items-center xl:flex-row gap-x-9">
+          <div className=" flex flex-col justify-center">
             <div>
               <motion.h2
                 variants={fadeIn("right", 0.2)}
@@ -208,7 +198,7 @@ const About = () => {
                       <CountUp start={0} end={25} duration={5} />
                       <span> +</span>
                     </div>
-                    <div className="flex justify-center xl:justify-start ">
+                    <div className="flex justify-center xl:justify-start">
                       <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] mb-2 ">
                         Finished projects
                       </div>
@@ -223,7 +213,7 @@ const About = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="flex flex-col w-full xl:max-w-[48%] h-[400px]"
+            className="flex flex-col w-full xl:max-w-[48%] justify-center"
           >
             <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
               {aboutData.map((item, itemIndex) => (
@@ -247,7 +237,7 @@ const About = () => {
                   className="flex-1 flex-col md-flex-row max-w-max gap-x-2 items-center text-white"
                 >
                   <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                  <div className="hidden md:flex">-</div>
+                  <div className="mb-2"></div>
                   <div>{item.stage}</div>
                   <div className="flex gap-x-4">
                     {item.icons?.map((item, itemIndex) => {

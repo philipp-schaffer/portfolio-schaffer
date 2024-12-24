@@ -5,79 +5,80 @@ import Avatar from "../components/Avatar";
 import { motion } from "framer-motion";
 
 import { fadeIn } from "../variants";
-import Particles from "react-tsparticles";
+import About from "./about";
+import Services from "./services";
+import Work from "./work";
+import Contact from "./contact";
 const Home = () => {
   return (
-    <div className="bg-primary/60] h-[100vw] pb-10 xs:h-[100vh] overflow-x-scroll bg-gradient-to-r from-primary/10 via-black/30 to-black/10">
-      {/* text */}
-      <div className="w-full h-full ">
-        <div className="text-center  overflow-x-scroll  flex flex-col justify-center xl:pt-40 xl:text-left container mx-auto">
-          {/* title */}
-          <motion.h1
-            variants={fadeIn("down", 0.1)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="h1 z-30 text-[1.5rem] lg:text-[3rem] xs:mt-0"
-          >
-            Turning Visions Into
-            <span className="text-accent">
-              <br />
-              Digital Reality
-            </span>
-          </motion.h1>
-          {/* subtitle */}
+    <div className="">
+      {/* bg-primary/60 bg-gradient-to-r from-primary/10 via-black/30 to-black/10*/}
+      <div className="">
+        {/* text */}
+        <div className="w-full h-full ">
+          <div className="text-center flex flex-col justify-center pt-5 xs:pt-10 sm:pt-15 md:pt-20 xl:pt-40 xl:text-left container mx-auto">
+            {/* title */}
+            <motion.h1
+              variants={fadeIn("down", 0.1)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className="h1 z-30 text-[2rem] xs:text-[2rem] lg:text-[3rem] xs:mt-0"
+            >
+              Turning Visions Into
+              <span className="text-accent">
+                <br />
+                Digital Reality
+              </span>
+            </motion.h1>
+            {/* subtitle */}
 
-          <motion.p
-            variants={fadeIn("down", 0.2)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="max-w-sm text-[1rem] lg:text-[1.2rem] xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 z-30"
-          >
-            My name is Philipp, I am a 20 year old ambitioned software developer
-            and designer. My goal is to create tools which help others through
-            out the day :)
-          </motion.p>
-          <motion.div
-            variants={fadeIn("down", 0.4)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="flex justify-center xl:hidden relative"
-          >
-            <ProjectsBtn />
-          </motion.div>
-          <motion.div
-            variants={fadeIn("down", 0.5)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="hidden xl:flex z-10"
-          >
-            <ProjectsBtn />
-          </motion.div>
+            <motion.p
+              variants={fadeIn("down", 0.2)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className="max-w-sm text-[1rem] lg:text-[1.2rem] xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 z-30"
+            >
+              My name is Philipp, I am a 20 year old ambitioned software
+              developer and designer. My goal is to create tools which help
+              others through out the day :)
+            </motion.p>
+            <motion.div
+              variants={fadeIn("down", 0.4)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className="flex justify-left relative"
+            >
+              <ProjectsBtn />
+            </motion.div>
+          </div>
         </div>
-      </div>
-      {/* image <div>image</div> */}
-      <div className="w-[1200px] h-full absolute right-0 bottom-0">
-        <div
-          className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute
+        {/* image <div>image</div> */}
+        <div className="w-[1200px] h-full absolute right-0 bottom-0">
+          <div
+            className="bg-none xl:bg-explosion xl:bg-cover xl:bg-right xl:bg-no-repeat w-full h-full absolute
          mix-blend-color-dodge translate-z-0"
-        ></div>
-        <div className="">
-          <ParticlesContainer></ParticlesContainer>
+          ></div>
+          <div className="h-[100vh]">
+            <ParticlesContainer></ParticlesContainer>
+          </div>
+          <motion.div
+            variants={fadeIn("up", 0.5)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="w-full h-full max-w-[540px] max-h-[606px] absolute bottom-0 right-[20%]"
+          >
+            <Avatar className="z-10 avatar"></Avatar>
+          </motion.div>
         </div>
-        <motion.div
-          variants={fadeIn("up", 0.5)}
-          initial="hidden"
-          animate="show"
-          exit="hidden"
-          className="w-full h-full max-w-[540px] max-h-[606px] absolute lg:bottom-0 lg:right-[20%]"
-        >
-          <Avatar></Avatar>
-        </motion.div>
       </div>
+      <About></About>
+      <Services></Services>
+      <Work></Work>
+      <Contact></Contact>
     </div>
   );
 };
