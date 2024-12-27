@@ -125,9 +125,9 @@ const aboutData = [
 const About = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div id="about" className="bg-site">
-      <div className="bg-primary/60 bg-gradient-to-r  from-primary/10 via-black/30 to-black/10 min-h-screen">
-        <div className="container w-full h-[100vh] text-center xl:text-left align-top mx-auto  flex flex-col items-center xl:flex-row gap-x-9">
+    <div id="about" className="bg-site ">
+      <div className="bg-primary/60 p-5 bg-gradient-to-r h-[90vh] flex justify-center   from-primary/10 via-black/30 to-black/10">
+        <div className="text-center xl:text-left align-top mx-auto  justify-center w-[100vw] flex flex-col items-center xl:flex-row gap-x-9">
           <div className=" flex flex-col justify-center">
             <div>
               <motion.h2

@@ -31,7 +31,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="h-[66vh]">
+    <div id="contact" className="h-[100vh]">
       <div className="container mx-auto text-center xl:text-left flex items-center justify-center w-full overflow-x-scroll">
         <div className="flex flex-col w-full  max-w-[700px] ">
           <motion.h2

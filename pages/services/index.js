@@ -6,7 +6,7 @@ import { fadeIn } from "../../variants";
 
 const Services = () => {
   return (
-    <div className="h-[65vh] xs:h-[92vh] flex items-center">
+    <div id="services" className="flex items-center p-5 relative h-[100vh]">
       <Circles></Circles>
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
