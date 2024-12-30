@@ -11,7 +11,7 @@ import Work from "./work";
 import Contact from "./contact";
 const Home = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       {/* hero */}
       <div id="home" className="w-full h-[100vh] relative">
         <div className="text-center flex flex-col justify-center pt-5 xs:pt-10 sm:pt-15 md:pt-20 xl:pt-40 xl:text-left container mx-auto">
